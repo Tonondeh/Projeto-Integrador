@@ -1,24 +1,108 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="Cine_Room" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo-Cine-Room" translatesAutoresizingMaskIntoConstraints="NO" id="tmL-u7-FCx">
+                                <rect key="frame" x="64" y="124" width="286" height="273"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="273" id="7Gu-8x-qCM"/>
+                                    <constraint firstAttribute="width" constant="286" id="bDm-ij-doe"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo-TMDB" translatesAutoresizingMaskIntoConstraints="NO" id="4Ua-0f-dYq">
+                                <rect key="frame" x="80" y="426" width="254" height="35"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Parceria com" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="whM-kT-gzh">
+                                <rect key="frame" x="147" y="397" width="120" height="24"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <color key="textColor" name="secondColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fBk-h0-qaS">
+                                <rect key="frame" x="40" y="631" width="334" height="60"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Conectar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rOE-Jo-qAV">
+                                        <rect key="frame" x="25" y="15.5" width="159" height="29"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo-TMDB_2" translatesAutoresizingMaskIntoConstraints="NO" id="FGY-gH-Xkm">
+                                        <rect key="frame" x="203" y="7.5" width="106" height="45"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="NSq-8u-VEy"/>
+                                            <constraint firstAttribute="width" constant="106" id="yZX-un-gpA"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" name="mainColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="71p-PT-OKb"/>
+                                    <constraint firstItem="FGY-gH-Xkm" firstAttribute="leading" secondItem="rOE-Jo-qAV" secondAttribute="trailing" constant="19" id="EKs-a7-agg"/>
+                                    <constraint firstItem="rOE-Jo-qAV" firstAttribute="leading" secondItem="fBk-h0-qaS" secondAttribute="leading" constant="25" id="H4t-3h-Z3K"/>
+                                    <constraint firstItem="FGY-gH-Xkm" firstAttribute="centerY" secondItem="fBk-h0-qaS" secondAttribute="centerY" id="Rz0-bo-sXK"/>
+                                    <constraint firstItem="rOE-Jo-qAV" firstAttribute="centerY" secondItem="fBk-h0-qaS" secondAttribute="centerY" id="jhf-EC-Yq0"/>
+                                    <constraint firstAttribute="trailing" secondItem="FGY-gH-Xkm" secondAttribute="trailing" constant="25" id="kw0-Ir-tHo"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" name="backgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="whM-kT-gzh" firstAttribute="top" secondItem="tmL-u7-FCx" secondAttribute="bottom" id="5T3-k5-zQt"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4Ua-0f-dYq" secondAttribute="trailing" constant="80" id="8dB-s9-g0l"/>
+                            <constraint firstItem="4Ua-0f-dYq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="80" id="9Tl-dY-EHl"/>
+                            <constraint firstItem="tmL-u7-FCx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ATG-Wg-NH3"/>
+                            <constraint firstItem="whM-kT-gzh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IFJ-li-PgO"/>
+                            <constraint firstItem="4Ua-0f-dYq" firstAttribute="top" secondItem="whM-kT-gzh" secondAttribute="bottom" constant="5" id="NdG-5S-Xmf"/>
+                            <constraint firstItem="fBk-h0-qaS" firstAttribute="top" secondItem="4Ua-0f-dYq" secondAttribute="bottom" constant="170" id="daA-lI-rjE"/>
+                            <constraint firstItem="fBk-h0-qaS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eUr-ER-OCe"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fBk-h0-qaS" secondAttribute="trailing" constant="40" id="iqF-fg-gkC"/>
+                            <constraint firstItem="fBk-h0-qaS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="uUD-l4-Isj"/>
+                            <constraint firstItem="4Ua-0f-dYq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ycf-nK-u5d"/>
+                            <constraint firstItem="tmL-u7-FCx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="80" id="z5j-Zv-oAU"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="conectarUIView" destination="fBk-h0-qaS" id="FQj-kQ-fac"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="34.782608695652179" y="93.75"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Logo-Cine-Room" width="512" height="512"/>
+        <image name="logo-TMDB" width="423.04000854492188" height="35.400001525878906"/>
+        <image name="logo-TMDB_2" width="190.24000549316406" height="81.519996643066406"/>
+        <namedColor name="backgroundColor">
+            <color red="0.0078431372549019607" green="0.15294117647058825" blue="0.3529411764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="mainColor">
+            <color red="1" green="0.43137254901960786" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="secondColor">
+            <color red="0.98039215686274506" green="0.6588235294117647" blue="0.47843137254901957" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
 </document>
