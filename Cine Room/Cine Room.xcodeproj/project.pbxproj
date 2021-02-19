@@ -15,6 +15,9 @@
 		6587688225DF47F30097BBF2 /* Esquecisenha.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6587688125DF47F30097BBF2 /* Esquecisenha.storyboard */; };
 		9F00EAAA25DF3FDB00D9F918 /* PerfilStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F00EAA925DF3FDB00D9F918 /* PerfilStoryboard.storyboard */; };
 		9F00EAAD25DF400000D9F918 /* PerfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F00EAAC25DF400000D9F918 /* PerfilViewController.swift */; };
+		BCE3896525E01569003CFAFF /* CriarConta.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCE3896425E01569003CFAFF /* CriarConta.storyboard */; };
+		BCE3896925E016FD003CFAFF /* CriarContaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE3896825E016FD003CFAFF /* CriarContaViewController.swift */; };
+		BCE3896C25E055DE003CFAFF /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE3896B25E055DE003CFAFF /* Alert.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,9 @@
 		6587688125DF47F30097BBF2 /* Esquecisenha.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Esquecisenha.storyboard; sourceTree = "<group>"; };
 		9F00EAA925DF3FDB00D9F918 /* PerfilStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PerfilStoryboard.storyboard; sourceTree = "<group>"; };
 		9F00EAAC25DF400000D9F918 /* PerfilViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilViewController.swift; sourceTree = "<group>"; };
+		BCE3896425E01569003CFAFF /* CriarConta.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CriarConta.storyboard; sourceTree = "<group>"; };
+		BCE3896825E016FD003CFAFF /* CriarContaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CriarContaViewController.swift; sourceTree = "<group>"; };
+		BCE3896B25E055DE003CFAFF /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,9 +68,10 @@
 			children = (
 				BC54B24C25DC970B0068D157 /* Storyboard */,
 				BC54B24D25DC971F0068D157 /* ViewController */,
-				6513C42225CAD15B003E6FF4 /* Assets.xcassets */,
+				BCE3896B25E055DE003CFAFF /* Alert.swift */,
 				6513C41925CAD158003E6FF4 /* AppDelegate.swift */,
 				6513C41B25CAD158003E6FF4 /* SceneDelegate.swift */,
+				6513C42225CAD15B003E6FF4 /* Assets.xcassets */,
 				6513C42725CAD15B003E6FF4 /* Info.plist */,
 			);
 			path = "Cine Room";
@@ -77,6 +84,7 @@
 				6513C42425CAD15B003E6FF4 /* LaunchScreen.storyboard */,
 				9F00EAA925DF3FDB00D9F918 /* PerfilStoryboard.storyboard */,
 				6587688125DF47F30097BBF2 /* Esquecisenha.storyboard */,
+				BCE3896425E01569003CFAFF /* CriarConta.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -85,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				9F00EAAC25DF400000D9F918 /* PerfilViewController.swift */,
+				BCE3896825E016FD003CFAFF /* CriarContaViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -150,6 +159,7 @@
 				9F00EAAA25DF3FDB00D9F918 /* PerfilStoryboard.storyboard in Resources */,
 				6513C42325CAD15B003E6FF4 /* Assets.xcassets in Resources */,
 				6587688225DF47F30097BBF2 /* Esquecisenha.storyboard in Resources */,
+				BCE3896525E01569003CFAFF /* CriarConta.storyboard in Resources */,
 				6513C42125CAD158003E6FF4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -163,6 +173,8 @@
 			files = (
 				9F00EAAD25DF400000D9F918 /* PerfilViewController.swift in Sources */,
 				6513C41A25CAD158003E6FF4 /* AppDelegate.swift in Sources */,
+				BCE3896925E016FD003CFAFF /* CriarContaViewController.swift in Sources */,
+				BCE3896C25E055DE003CFAFF /* Alert.swift in Sources */,
 				6513C41C25CAD158003E6FF4 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
