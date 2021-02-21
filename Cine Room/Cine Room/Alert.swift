@@ -18,7 +18,7 @@ struct Alert {
 	
 	
 	static func showIncompleteFormAlert(on vc: UIViewController) {
-		showBasicAlert(on: vc, with: "Incomplete Fomr", message: "Please fill out all fields in the form")
+		showBasicAlert(on: vc, with: "Cadastro incompleto", message: "Por favor, preencher todos os campos")
 	}
 	
 	static func showInvalidEmailAlert(on vc: UIViewController) {
