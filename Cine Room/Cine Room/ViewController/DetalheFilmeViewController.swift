@@ -23,7 +23,6 @@ class DetalheFilmeViewController: UIViewController {
 	@IBOutlet weak var scrollView: UIScrollView!
 	
 	
-	
 	// MARK: - Variable
 	var atores: [Elenco] = [ Elenco(nome: "Gal Gadot", nomeArt: "Diana Prince", imageElenco: #imageLiteral(resourceName: "ator4")),
 									 Elenco(nome: "Ator 1", nomeArt: "Ator Art 1", imageElenco: UIImage(named: "ator1") ?? UIImage()),
@@ -50,9 +49,7 @@ class DetalheFilmeViewController: UIViewController {
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		
-		
-		self.scrollView.delaysContentTouches = true
-		
+		configScrollView()
 		configBarButtonItem()
 		configCollectionView()
 		configTableView()
@@ -61,6 +58,10 @@ class DetalheFilmeViewController: UIViewController {
 	
 	
 	// MARK: - Function
+	func configScrollView() {
+		self.scrollView.delaysContentTouches = true
+	}
+	
 	func configBarButtonItem() {
 		self.bookmarkBarButtonItem.tintColor = .black
 		self.heartBarButtonItem.tintColor = .black
@@ -126,8 +127,6 @@ class DetalheFilmeViewController: UIViewController {
 	}
 	
 	
-
-	
 }
 
 
@@ -147,7 +146,6 @@ extension DetalheFilmeViewController: UICollectionViewDelegate, UICollectionView
 		
 		return cell ?? UICollectionViewCell()
 	}
-	
 	
 	
 }
