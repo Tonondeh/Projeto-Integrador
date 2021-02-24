@@ -15,6 +15,10 @@
 		6587688225DF47F30097BBF2 /* Esquecisenha.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6587688125DF47F30097BBF2 /* Esquecisenha.storyboard */; };
 		9F00EAAA25DF3FDB00D9F918 /* PerfilStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F00EAA925DF3FDB00D9F918 /* PerfilStoryboard.storyboard */; };
 		9F00EAAD25DF400000D9F918 /* PerfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F00EAAC25DF400000D9F918 /* PerfilViewController.swift */; };
+		BC5CD2EF25E5C90B00571A4F /* WatchList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC5CD2EE25E5C90B00571A4F /* WatchList.storyboard */; };
+		BC5CD2F225E5CB0000571A4F /* WatchListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5CD2F125E5CB0000571A4F /* WatchListViewController.swift */; };
+		BC5CD2F825E5CF2700571A4F /* WatchListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC5CD2F625E5CF2700571A4F /* WatchListTableViewCell.swift */; };
+		BC5CD2F925E5CF2700571A4F /* WatchListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC5CD2F725E5CF2700571A4F /* WatchListTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +32,10 @@
 		6587688125DF47F30097BBF2 /* Esquecisenha.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Esquecisenha.storyboard; sourceTree = "<group>"; };
 		9F00EAA925DF3FDB00D9F918 /* PerfilStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PerfilStoryboard.storyboard; sourceTree = "<group>"; };
 		9F00EAAC25DF400000D9F918 /* PerfilViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilViewController.swift; sourceTree = "<group>"; };
+		BC5CD2EE25E5C90B00571A4F /* WatchList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WatchList.storyboard; sourceTree = "<group>"; };
+		BC5CD2F125E5CB0000571A4F /* WatchListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchListViewController.swift; sourceTree = "<group>"; };
+		BC5CD2F625E5CF2700571A4F /* WatchListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchListTableViewCell.swift; sourceTree = "<group>"; };
+		BC5CD2F725E5CF2700571A4F /* WatchListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WatchListTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +68,7 @@
 		6513C41825CAD158003E6FF4 /* Cine Room */ = {
 			isa = PBXGroup;
 			children = (
+				BC5CD2F525E5CEC200571A4F /* WatchListTableViewCell */,
 				BC54B24C25DC970B0068D157 /* Storyboard */,
 				BC54B24D25DC971F0068D157 /* ViewController */,
 				6513C42225CAD15B003E6FF4 /* Assets.xcassets */,
@@ -77,6 +86,7 @@
 				6513C42425CAD15B003E6FF4 /* LaunchScreen.storyboard */,
 				9F00EAA925DF3FDB00D9F918 /* PerfilStoryboard.storyboard */,
 				6587688125DF47F30097BBF2 /* Esquecisenha.storyboard */,
+				BC5CD2EE25E5C90B00571A4F /* WatchList.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -85,8 +95,18 @@
 			isa = PBXGroup;
 			children = (
 				9F00EAAC25DF400000D9F918 /* PerfilViewController.swift */,
+				BC5CD2F125E5CB0000571A4F /* WatchListViewController.swift */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		BC5CD2F525E5CEC200571A4F /* WatchListTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				BC5CD2F625E5CF2700571A4F /* WatchListTableViewCell.swift */,
+				BC5CD2F725E5CF2700571A4F /* WatchListTableViewCell.xib */,
+			);
+			path = WatchListTableViewCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,8 +166,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC5CD2F925E5CF2700571A4F /* WatchListTableViewCell.xib in Resources */,
 				6513C42625CAD15B003E6FF4 /* LaunchScreen.storyboard in Resources */,
 				9F00EAAA25DF3FDB00D9F918 /* PerfilStoryboard.storyboard in Resources */,
+				BC5CD2EF25E5C90B00571A4F /* WatchList.storyboard in Resources */,
 				6513C42325CAD15B003E6FF4 /* Assets.xcassets in Resources */,
 				6587688225DF47F30097BBF2 /* Esquecisenha.storyboard in Resources */,
 				6513C42125CAD158003E6FF4 /* Main.storyboard in Resources */,
@@ -162,7 +184,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F00EAAD25DF400000D9F918 /* PerfilViewController.swift in Sources */,
+				BC5CD2F825E5CF2700571A4F /* WatchListTableViewCell.swift in Sources */,
 				6513C41A25CAD158003E6FF4 /* AppDelegate.swift in Sources */,
+				BC5CD2F225E5CB0000571A4F /* WatchListViewController.swift in Sources */,
 				6513C41C25CAD158003E6FF4 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
