@@ -21,6 +21,8 @@ class TrailerFilmeTableViewCell: UITableViewCell {
 	override func awakeFromNib() {
 		super.awakeFromNib()
 		self.accessoryType = .disclosureIndicator
+//		self.backgroundColor = UIColor(named: "backgroundColor")
+		self.tintColor = .purple
 	}
 	
 	func configCell(detalhe: DetalheFilme) {
