@@ -11,10 +11,12 @@ class WatchListTableViewCell: UITableViewCell {
 	
 	static let identifier: String = "WatchListTableViewCell"
 	
+	// MARK: - IBOutlet
 	@IBOutlet weak var filmeImageView: UIImageView!
 	@IBOutlet weak var nomeLabel: UILabel!
 	@IBOutlet weak var generoLabel: UILabel!
 	@IBOutlet weak var ratingLabel: UILabel!
+	@IBOutlet weak var backgroundCellView: UIView!
 	
 	
 	static func nib() -> UINib {
@@ -23,7 +25,12 @@ class WatchListTableViewCell: UITableViewCell {
 	
 	override func awakeFromNib() {
 		super.awakeFromNib()
+		configView()
 		configImageView()
+	}
+	
+	func configView() {
+		self.backgroundCellView.layer.cornerRadius = 10
 	}
 	
 	func configImageView() {
@@ -31,14 +38,11 @@ class WatchListTableViewCell: UITableViewCell {
 	}
 	
 	func configCell(filme: WatchListFilme) {
-		self.filmeImageView.image = filme.filmeImage
-		self.nomeLabel.text = filme.nomeFilme
-		self.generoLabel.text = filme.generoFilme
-		self.ratingLabel.text = filme.ratingFilme
+		self.filmeImageView.image	= filme.filmeImage
+		self.nomeLabel.text 			= filme.nomeFilme
+		self.generoLabel.text 		= filme.generoFilme
+		self.ratingLabel.text 		= filme.ratingFilme
 	}
-	
-	
-	
 	
 	
 }

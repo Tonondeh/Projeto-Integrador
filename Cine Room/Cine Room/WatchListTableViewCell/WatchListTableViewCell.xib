@@ -10,15 +10,15 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="WatchListTableViewCell" rowHeight="136" id="KGk-i7-Jjw" customClass="WatchListTableViewCell" customModule="Cine_Room" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="492" height="136"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="WatchListTableViewCell" rowHeight="146" id="KGk-i7-Jjw" customClass="WatchListTableViewCell" customModule="Cine_Room" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="492" height="146"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="492" height="136"/>
+                <rect key="frame" x="0.0" y="0.0" width="492" height="146"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i06-AX-1X5">
-                        <rect key="frame" x="0.0" y="0.0" width="492" height="135"/>
+                        <rect key="frame" x="5" y="5" width="482" height="135"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tpj-9x-wev">
                                 <rect key="frame" x="10" y="10" width="200" height="115"/>
@@ -27,20 +27,20 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wonder Woman 1984" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="5x5-Dg-IDD">
-                                <rect key="frame" x="215" y="10" width="272" height="24"/>
+                                <rect key="frame" x="215" y="10" width="262" height="24"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <color key="textColor" name="mainColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fantasia, Ação, Aventura" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="bgs-4W-7v7">
-                                <rect key="frame" x="215" y="44" width="272" height="18"/>
+                                <rect key="frame" x="215" y="44" width="262" height="18"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" name="secondColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star.square" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="kZO-10-akW">
                                 <rect key="frame" x="215" y="78" width="24" height="21.5"/>
-                                <color key="tintColor" red="0.98823529409999999" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" red="0.95294117647058818" green="0.98431372549019602" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="24" id="ODJ-fE-ZZw"/>
                                     <constraint firstAttribute="width" constant="24" id="dzo-86-OZP"/>
@@ -50,11 +50,11 @@
                                 <rect key="frame" x="244" y="78.5" width="34" height="21"/>
                                 <color key="tintColor" red="1" green="0.9916588717" blue="0.33310535250000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
-                                <color key="textColor" red="0.97647058819999999" green="0.74117647060000003" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="textColor" name="secondColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" name="backgroundColor"/>
+                        <color key="backgroundColor" red="0.15436795080892202" green="0.23319477258294033" blue="0.48312367092479358" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="bgs-4W-7v7" firstAttribute="leading" secondItem="tpj-9x-wev" secondAttribute="trailing" constant="5" id="555-kc-t2f"/>
                             <constraint firstItem="bgs-4W-7v7" firstAttribute="top" secondItem="5x5-Dg-IDD" secondAttribute="bottom" constant="10" id="6ox-7e-Nck"/>
@@ -73,21 +73,23 @@
                         </constraints>
                     </view>
                 </subviews>
+                <color key="backgroundColor" name="backgroundColor"/>
                 <constraints>
-                    <constraint firstItem="i06-AX-1X5" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="2X9-BY-2ro"/>
-                    <constraint firstAttribute="trailing" secondItem="i06-AX-1X5" secondAttribute="trailing" id="Hsg-oF-x24"/>
-                    <constraint firstAttribute="bottom" secondItem="i06-AX-1X5" secondAttribute="bottom" id="rVa-Yq-8ap"/>
-                    <constraint firstItem="i06-AX-1X5" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="upW-Au-5yR"/>
+                    <constraint firstItem="i06-AX-1X5" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="2X9-BY-2ro"/>
+                    <constraint firstAttribute="trailing" secondItem="i06-AX-1X5" secondAttribute="trailing" constant="5" id="Hsg-oF-x24"/>
+                    <constraint firstAttribute="bottom" secondItem="i06-AX-1X5" secondAttribute="bottom" constant="5" id="rVa-Yq-8ap"/>
+                    <constraint firstItem="i06-AX-1X5" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="upW-Au-5yR"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="backgroundCellView" destination="i06-AX-1X5" id="F7s-Pu-hHh"/>
                 <outlet property="filmeImageView" destination="tpj-9x-wev" id="J9y-c6-ryg"/>
                 <outlet property="generoLabel" destination="bgs-4W-7v7" id="0eD-lX-Ids"/>
                 <outlet property="nomeLabel" destination="5x5-Dg-IDD" id="Dtj-84-AY9"/>
                 <outlet property="ratingLabel" destination="9XC-uZ-Lv3" id="fik-LV-aUd"/>
             </connections>
-            <point key="canvasLocation" x="137.68115942028987" y="43.526785714285715"/>
+            <point key="canvasLocation" x="137.68115942028987" y="46.875"/>
         </tableViewCell>
     </objects>
     <resources>

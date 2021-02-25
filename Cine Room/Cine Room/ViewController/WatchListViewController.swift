@@ -16,8 +16,6 @@ struct WatchListFilme {
 }
 
 
-
-
 class WatchListViewController: UIViewController {
 	
 	// MARK: - IBOutlet
@@ -54,7 +52,6 @@ class WatchListViewController: UIViewController {
 	]
 	var listaFilmes: [WatchListFilme] = []
 
-	
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
@@ -103,14 +100,17 @@ extension WatchListViewController: UITableViewDelegate, UITableViewDataSource {
 	}
 	
 	func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-		
-		
 		let filme = self.listaFilmes[indexPath.row]
 		let cell = tableView.dequeueReusableCell(withIdentifier: WatchListTableViewCell.identifier, for: indexPath) as? WatchListTableViewCell
 		
 		cell?.configCell(filme: filme)
 		
 		return cell ?? UITableViewCell()
+	}
+	
+	func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+		print("UISegmented atual: \(self.listSegmented.selectedSegmentIndex)")
+		print("Selecionado Indice: \(indexPath.row)")
 	}
 	
 	
