@@ -43,7 +43,6 @@ class CriarContaViewController: UIViewController {
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		
 
 		configScrollView()
 		configView()
