@@ -12,6 +12,7 @@ class TrailerFilmeTableViewCell: UITableViewCell {
 	static let identifier: String = "TrailerFilmeTableViewCell"
 	
 	@IBOutlet weak var nomeTrailerLabel: UILabel!
+	@IBOutlet weak var iconImageView: UIImageView!
 	
 	
 	static func nib() -> UINib {
@@ -20,9 +21,13 @@ class TrailerFilmeTableViewCell: UITableViewCell {
 	
 	override func awakeFromNib() {
 		super.awakeFromNib()
-		self.accessoryType = .disclosureIndicator
-//		self.backgroundColor = UIColor(named: "backgroundColor")
-		self.tintColor = .purple
+		
+		configImageView()
+	}
+	
+	func configImageView() {
+		self.iconImageView.image = UIImage(systemName: "play.rectangle")
+		self.iconImageView.tintColor = UIColor(named: "secondColor")
 	}
 	
 	func configCell(detalhe: DetalheFilme) {

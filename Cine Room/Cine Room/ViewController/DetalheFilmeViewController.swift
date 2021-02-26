@@ -76,7 +76,6 @@ class DetalheFilmeViewController: UIViewController {
 	
 	func configTableView() {
 		self.tableView.backgroundColor = UIColor(named: "backgroundColor")
-		self.tableView.separatorColor = UIColor(named: "secondColor")
 		self.tableView.delegate = self
 		self.tableView.dataSource = self
 		self.tableView.register(TrailerFilmeTableViewCell.nib(), forCellReuseIdentifier: TrailerFilmeTableViewCell.identifier)
@@ -166,6 +165,10 @@ extension DetalheFilmeViewController: UITableViewDelegate, UITableViewDataSource
 		cell?.configCell(detalhe: trailer)
 		
 		return cell ?? UITableViewCell()
+	}
+	
+	func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+		print("Celula selecionada - \(indexPath.row)")
 	}
 	
 	

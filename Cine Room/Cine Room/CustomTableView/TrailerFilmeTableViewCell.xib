@@ -3,7 +3,6 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
-        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -21,18 +20,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="340" height="40"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Oficial" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="thA-PO-tIG">
-                                <rect key="frame" x="20" y="5" width="290" height="30"/>
+                                <rect key="frame" x="20" y="5" width="282" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JGN-Jf-0dN">
+                                <rect key="frame" x="307" y="5" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="0YY-xY-1ga"/>
+                                    <constraint firstAttribute="width" constant="30" id="oA8-ei-c5x"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" name="backgroundColor"/>
+                        <color key="backgroundColor" red="0.16078431372549018" green="0.24313725490196078" blue="0.50588235294117645" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="thA-PO-tIG" firstAttribute="leading" secondItem="xVW-He-GFM" secondAttribute="leading" constant="20" id="0Qp-rU-f2t"/>
                             <constraint firstAttribute="bottom" secondItem="thA-PO-tIG" secondAttribute="bottom" constant="5" id="0iX-tl-h4u"/>
                             <constraint firstAttribute="height" constant="40" id="CYU-5j-077"/>
-                            <constraint firstAttribute="trailing" secondItem="thA-PO-tIG" secondAttribute="trailing" constant="30" id="LuL-Pl-qPo"/>
+                            <constraint firstAttribute="trailing" secondItem="JGN-Jf-0dN" secondAttribute="trailing" constant="3" id="Kro-CZ-S42"/>
+                            <constraint firstItem="JGN-Jf-0dN" firstAttribute="leading" secondItem="thA-PO-tIG" secondAttribute="trailing" constant="5" id="Kyf-Jf-Qrk"/>
+                            <constraint firstItem="JGN-Jf-0dN" firstAttribute="centerY" secondItem="thA-PO-tIG" secondAttribute="centerY" id="TlI-ZS-Og7"/>
                             <constraint firstItem="thA-PO-tIG" firstAttribute="top" secondItem="xVW-He-GFM" secondAttribute="top" constant="5" id="Zu4-ix-XRf"/>
                         </constraints>
                     </view>
@@ -46,14 +54,10 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="iconImageView" destination="JGN-Jf-0dN" id="SpY-aE-hOQ"/>
                 <outlet property="nomeTrailerLabel" destination="thA-PO-tIG" id="wdK-11-vMf"/>
             </connections>
             <point key="canvasLocation" x="-257.97101449275362" y="29.799107142857142"/>
         </tableViewCell>
     </objects>
-    <resources>
-        <namedColor name="backgroundColor">
-            <color red="0.0080000003799796104" green="0.15299999713897705" blue="0.3529999852180481" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-    </resources>
 </document>
