@@ -1,13 +1,13 @@
 //
-//  PerfilViewController.swift
+//  EsquecisenhaViewController.swift
 //  Cine Room
 //
-//  Created by Danilo Uvara de Souza on 18/02/21.
+//  Created by ANDRE LUIZ TONON on 25/02/21.
 //
 
 import UIKit
 
-class PerfilViewController: UIViewController {
+class EsquecisenhaViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
