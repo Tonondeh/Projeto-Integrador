@@ -10,9 +10,7 @@
 		139CF84525E5B6AF004FB4EF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139CF84425E5B6AF004FB4EF /* LoginViewController.swift */; };
 		6513C41A25CAD158003E6FF4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6513C41925CAD158003E6FF4 /* AppDelegate.swift */; };
 		6513C41C25CAD158003E6FF4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6513C41B25CAD158003E6FF4 /* SceneDelegate.swift */; };
-		6513C42125CAD158003E6FF4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6513C41F25CAD158003E6FF4 /* Main.storyboard */; };
 		6513C42325CAD15B003E6FF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6513C42225CAD15B003E6FF4 /* Assets.xcassets */; };
-		6513C42625CAD15B003E6FF4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6513C42425CAD15B003E6FF4 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,9 +18,7 @@
 		6513C41625CAD158003E6FF4 /* Cine Room.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cine Room.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6513C41925CAD158003E6FF4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6513C41B25CAD158003E6FF4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		6513C42025CAD158003E6FF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6513C42225CAD15B003E6FF4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		6513C42525CAD15B003E6FF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6513C42725CAD15B003E6FF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -40,6 +36,8 @@
 		6513C40D25CAD158003E6FF4 = {
 			isa = PBXGroup;
 			children = (
+				6513C41925CAD158003E6FF4 /* AppDelegate.swift */,
+				6513C41B25CAD158003E6FF4 /* SceneDelegate.swift */,
 				6513C41825CAD158003E6FF4 /* Cine Room */,
 				6513C41725CAD158003E6FF4 /* Products */,
 			);
@@ -59,8 +57,6 @@
 				BC54B24C25DC970B0068D157 /* Storyboard */,
 				BC54B24D25DC971F0068D157 /* ViewController */,
 				6513C42225CAD15B003E6FF4 /* Assets.xcassets */,
-				6513C41925CAD158003E6FF4 /* AppDelegate.swift */,
-				6513C41B25CAD158003E6FF4 /* SceneDelegate.swift */,
 				6513C42725CAD15B003E6FF4 /* Info.plist */,
 			);
 			path = "Cine Room";
@@ -69,8 +65,6 @@
 		BC54B24C25DC970B0068D157 /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
-				6513C41F25CAD158003E6FF4 /* Main.storyboard */,
-				6513C42425CAD15B003E6FF4 /* LaunchScreen.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -140,9 +134,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6513C42625CAD15B003E6FF4 /* LaunchScreen.storyboard in Resources */,
 				6513C42325CAD15B003E6FF4 /* Assets.xcassets in Resources */,
-				6513C42125CAD158003E6FF4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -160,25 +152,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		6513C41F25CAD158003E6FF4 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6513C42025CAD158003E6FF4 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		6513C42425CAD15B003E6FF4 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6513C42525CAD15B003E6FF4 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		6513C42825CAD15B003E6FF4 /* Debug */ = {
