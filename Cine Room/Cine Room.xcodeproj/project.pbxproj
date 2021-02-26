@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		139CF84525E5B6AF004FB4EF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139CF84425E5B6AF004FB4EF /* LoginViewController.swift */; };
 		6513C41A25CAD158003E6FF4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6513C41925CAD158003E6FF4 /* AppDelegate.swift */; };
 		6513C41C25CAD158003E6FF4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6513C41B25CAD158003E6FF4 /* SceneDelegate.swift */; };
 		6513C42325CAD15B003E6FF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6513C42225CAD15B003E6FF4 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		139CF84425E5B6AF004FB4EF /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		6513C41625CAD158003E6FF4 /* Cine Room.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cine Room.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6513C41925CAD158003E6FF4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6513C41B25CAD158003E6FF4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -70,6 +72,7 @@
 		BC54B24D25DC971F0068D157 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				139CF84425E5B6AF004FB4EF /* LoginViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -142,6 +145,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				139CF84525E5B6AF004FB4EF /* LoginViewController.swift in Sources */,
 				6513C41A25CAD158003E6FF4 /* AppDelegate.swift in Sources */,
 				6513C41C25CAD158003E6FF4 /* SceneDelegate.swift in Sources */,
 			);
@@ -273,7 +277,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Cine Room/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -292,7 +296,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Cine Room/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
