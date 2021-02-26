@@ -50,9 +50,4 @@ extension VerticalTableViewCell: UICollectionViewDelegate, UICollectionViewDataS
         return cellV ?? UICollectionViewCell()
         
     }
-    
-//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-//        return CGSize(width: 199, height: 263)
-//    }
-    
 }
